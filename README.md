@@ -1,18 +1,16 @@
 # NeurIPS 2020 Flatland Idea List
 
-Baselines and Observation Ideas for Flatland
-https://docs.google.com/document/d/1Lwc-0CuAULrBATNjHr91Gh_SGben6bLD90IiJjhjqsE/edit
-
----
 
 Q-Learning in enormous action spaces via amortized approximate maximization
+---
+
 https://arxiv.org/abs/2001.08116 (from Florian)
 
 Action space could be forward/left/right/pause x nb agents
 
+Deep Q-learning from Demonstrations (DQfd)
 ---
 
-Deep Q-learning from Demonstrations (DQfd)
 https://arxiv.org/pdf/1704.03732.pdf (from Nilabha)
 
 - The idea is sort of imitation learning (Refer section Related Work) but is able to provide better results than the expert or demonstration experience unlike DAGGER etc..
@@ -21,9 +19,9 @@ https://arxiv.org/pdf/1704.03732.pdf (from Nilabha)
 
 - As this implementation shows https://github.com/go2sea/DQfD - the expert demonstrations (or OR solutions in our case) can help jump start the training process
 
+Comparison of path planning methods for a multi-robot team
 ---
 
-Comparison of path planning methods for a multi-robot team
 https://core.ac.uk/download/pdf/84833259.pdf (from Jeremy)
 
 > This master thesis discusses the topic of
@@ -44,9 +42,9 @@ https://core.ac.uk/download/pdf/84833259.pdf (from Jeremy)
 Comparison of path planning methods for a multi-robot team Bc. Jakub Hvězda (Masters Thesis, 2017). Very similar to flatland environment, apart from the junction constraints, same speed, no failures...? (AFAICT). The algorithm assumes that the resource graph is constructed such that resources are of two types: intersection resources with capacity 1 and lane resources with capacity 1 or greater. Another assumption is also that if multiple agents are present on the same resource then they are all traveling in the same direction and their order does not change, meaning they cannot overtake each other. The idea is that the lanes are not wide enough for two agents to drive in parallel but long enough so that agents can drive behind each other.
 
 
+Neural Combinatorial Optimization with Reinforcement Learning
 ---
 
-Neural Combinatorial Optimization with Reinforcement Learning
 https://arxiv.org/abs/1611.09940 (from Jeremy)
 
 > This paper presents a framework to tackle combinatorial optimization problems using neural networks and reinforcement learning. We focus on the traveling salesman problem (TSP) and train a recurrent network that, given a set of city coordinates, predicts a distribution over different city permutations. Using negative tour length as the reward signal, we optimize the parameters of the recurrent network using a policy gradient method. We compare learning the network parameters on a set of training graphs against learning them on individual test graphs. Despite the computational expense, without much engineering and heuristic designing, Neural Combinatorial Optimization achieves close to optimal results on 2D Euclidean graphs with up to 100 nodes. Applied to the KnapSack, another NP-hard problem, the same method obtains optimal solutions for instances with up to 200 items.
@@ -56,9 +54,9 @@ Couple of implementations (2-3 years old):
 - https://github.com/pemami4911/neural-combinatorial-rl-pytorch  Not tried this yet. (Florian: this guy generally does good work)
 - https://github.com/MichelDeudon/neural-combinatorial-optimization-rl-tensorflow
 
----
 
 Attention, Learn to Solve Routing Problems!
+---
 https://arxiv.org/pdf/1803.08475v3.pdf (from Nilabha)
 
 > The recently presented idea to learn heuristics for combinatorial optimization
@@ -73,18 +71,18 @@ https://arxiv.org/pdf/1803.08475v3.pdf (from Nilabha)
   Vehicle Routing Problem (VRP), the Orienteering Problem (OP) and (a stochastic variant of) the Prize Collecting TSP (PCTSP), outperforming a wide range of
   baselines and getting results close to highly optimized and specialized algorithms.
 
----
 
 Conflict-free route planning in dynamic environments
+---
 https://www.researchgate.net/publication/221063712_Conflict-free_route_planning_in_dynamic_environments (form Jeremy)
 
 > Motion  planning  for  multiple  robots  is  tractable in  case  we  can  assume  a  roadmap  on  which  all  the  robotstravel, which is often the case in many automated guided vehicledomains,  such  as  factory  floors  or  container  terminals.  Wepresent  anO(nvlog(nv) +n2v)(nthe  number  of  nodes,vthe  number  of  vehicles)  route  planning  algorithm  for  a  singlerobot,  which  can  find  the  minimum-time  route  given  a  set  ofexisting  route  plans  that  it  may  not  interfere  with.In  addition,  we  present  an  algorithm  that  can  propagatedelay  through  the  plans  of  the  robots  in  case  one  or  morerobots are delayed. This delay-propagation algorithm allows usto implement a Pareto-optimal plan repair scheme, in which onerobot can improve its route plan without adversely affecting theother robots. We compare this approach to several plan repairschemes  from  the  literature,  which  are  based  on  the  idea  ofgiving  a  higher  priority  to  non-delayed  agents
 
----
 
 Chip Placement with Deep Reinforcement Learning
-https://arxiv.org/pdf/2004.10746.pdf
-Florian
+---
+https://arxiv.org/pdf/2004.10746.pdf (from Florian)
+
 Used by Instadeep active in same domain!
 
 > In this work, we present a learning-based approach to chip placement, one of the most complex and time-consuming stages of the chip design process. Unlike prior methods, our approach
@@ -104,3 +102,10 @@ Used by Instadeep active in same domain!
   and area), and we show that, in under 6 hours,
   our method can generate placements that are superhuman or comparable on modern accelerator
   netlists, whereas existing baselines require human experts in the loop and take several weeks.
+  
+Baselines and Observation Ideas for Flatland
+---
+
+Summary document used for the proposal baselines
+
+https://docs.google.com/document/d/1Lwc-0CuAULrBATNjHr91Gh_SGben6bLD90IiJjhjqsE/edit

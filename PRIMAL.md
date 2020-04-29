@@ -1,4 +1,4 @@
-[**Zoom recording**](https://zoom.us/rec/play/vMclI-ChrzI3SdTH5ASDVKQsW47pL6yshCFKqPRfyBq8W3JXNQelbuBEZePOTRQ6jgkDzSDIx1Lf9JE-) 
+[**Zoom recording**](https://zoom.us/rec/play/vMclI-ChrzI3SdTH5ASDVKQsW47pL6yshCFKqPRfyBq8W3JXNQelbuBEZePOTRQ6jgkDzSDIx1Lf9JE-) - see below for timestamps
 
 60:00 - Adrian: Flatland intro, time-expanded graph, Cooperative A*
 66:00 - Guillaume: centralised vs distributed vs decentralised
